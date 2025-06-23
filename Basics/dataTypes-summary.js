@@ -28,3 +28,36 @@ let myObj = {
 const myFunction = function(){
     console.log("Hello World")
 }
+
+
+
+/*STACK AND HEAP MEMORY IN JS*/
+
+//Primitive(Stack) ,,NonPrimitive(HEAP)
+
+
+//Stack-->copy
+
+let myName = "Harsh RAj";
+
+let myNickName = myName;
+
+console.log(myName)
+console.log(myNickName)
+
+myNickName = "Jhulla"
+console.log(myName)
+console.log(myNickName)
+
+//HEAP-->Refrence
+
+let object ={
+    name:"HARSH RAJ",
+    DOB:"17/02/2003"
+
+}
+
+let obj = object;
+obj.name = "JHULLA";
+
+console.log(object)
